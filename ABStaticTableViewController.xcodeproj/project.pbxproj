@@ -21,6 +21,7 @@
 		25C73FB418F080C90008028D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25C73F9618F080C80008028D /* UIKit.framework */; };
 		25C73FBC18F080C90008028D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 25C73FBA18F080C90008028D /* InfoPlist.strings */; };
 		25C73FBE18F080C90008028D /* ABStaticTableViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C73FBD18F080C90008028D /* ABStaticTableViewControllerTests.m */; };
+		25C73FCA18F081E60008028D /* ABStaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C73FC818F081E60008028D /* ABStaticTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		25C73FB918F080C90008028D /* ABStaticTableViewControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ABStaticTableViewControllerTests-Info.plist"; sourceTree = "<group>"; };
 		25C73FBB18F080C90008028D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		25C73FBD18F080C90008028D /* ABStaticTableViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ABStaticTableViewControllerTests.m; sourceTree = "<group>"; };
+		25C73FC818F081E60008028D /* ABStaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABStaticTableViewController.m; sourceTree = SOURCE_ROOT; };
+		25C73FC918F081E60008028D /* ABStaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABStaticTableViewController.h; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +115,7 @@
 		25C73F9818F080C80008028D /* ABStaticTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				25C73FC718F081D80008028D /* Classes */,
 				25C73FA118F080C80008028D /* ABAppDelegate.h */,
 				25C73FA218F080C80008028D /* ABAppDelegate.m */,
 				25C73FA418F080C80008028D /* Main.storyboard */,
@@ -150,6 +154,15 @@
 				25C73FBA18F080C90008028D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25C73FC718F081D80008028D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				25C73FC918F081E60008028D /* ABStaticTableViewController.h */,
+				25C73FC818F081E60008028D /* ABStaticTableViewController.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +265,7 @@
 			files = (
 				25C73F9F18F080C80008028D /* main.m in Sources */,
 				25C73FA918F080C80008028D /* ABViewController.m in Sources */,
+				25C73FCA18F081E60008028D /* ABStaticTableViewController.m in Sources */,
 				25C73FA318F080C80008028D /* ABAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,7 +348,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +380,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -380,6 +394,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABStaticTableViewController/ABStaticTableViewController-Prefix.pch";
 				INFOPLIST_FILE = "ABStaticTableViewController/ABStaticTableViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ABStaticTableViewController/ABStaticTableViewController-Prefix.pch";
 				INFOPLIST_FILE = "ABStaticTableViewController/ABStaticTableViewController-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

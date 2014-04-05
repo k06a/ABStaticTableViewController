@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ABStaticTableViewController.h"
 
-@interface ABViewController : UIViewController
+@interface ABViewController : ABStaticTableViewController
 
 @end
