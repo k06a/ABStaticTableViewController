@@ -1,10 +1,8 @@
 #ABStaticTableViewController
-=======
 
 Dynamically hide rows and sections in static UITableView inside UITableViewController.
 
 #Installation
-=======
 
 Just:
 
@@ -18,7 +16,6 @@ or include this files into your project:
 - ABStaticTableViewController.m
 
 #Using
-=======
 
 Replace this code of `MyTableViewController.h`:
 
@@ -51,6 +48,5 @@ And now you can call this methods to non-animated and animated rows and sections
 ```
 
 #License
-=======
 
 ABStaticTableViewController is released under the MIT License.
