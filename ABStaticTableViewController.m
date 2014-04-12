@@ -65,7 +65,7 @@
     for (NSIndexPath * ip in [self.rowsVisibility.allKeys sortedArrayUsingSelector:@selector(compare:)])
     {
         if (ip.section == indexPath.section
-            && ip.row < indexPath.row - rowDelta)
+            && ip.row < indexPath.row)
         {
             BOOL (^block)() = self.rowsVisibility[ip];
             rowDelta += block() ? 0 : 1;
@@ -79,7 +79,7 @@
     NSInteger secDelta = 0;
     for (NSNumber *sec in [self.sectionsVisibility.allKeys sortedArrayUsingSelector:@selector(compare:)])
     {
-        if (sec.integerValue < section - secDelta)
+        if (sec.integerValue < section)
         {
             BOOL (^block)() = self.sectionsVisibility[sec];
             secDelta += block() ? 0 : 1;
