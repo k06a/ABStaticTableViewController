@@ -13,6 +13,9 @@
 @property (strong, nonatomic) NSMutableDictionary *rowsVisibility;
 @property (strong, nonatomic) NSMutableDictionary *sectionsVisibility;
 
+- (BOOL)isRowVisible:(NSIndexPath *)indexPath;
+- (BOOL)isSectionVisible:(NSInteger)section;
+
 - (NSIndexPath *)convertRow:(NSIndexPath *)indexPath;
 - (NSInteger)convertSection:(NSInteger)section;
 - (NSIndexPath *)recoverRow:(NSIndexPath *)indexPath;

@@ -28,6 +28,18 @@
     return _sectionsVisibility;
 }
 
+- (BOOL)isRowVisible:(NSIndexPath *)indexPath
+{
+    BOOL(^block)() = self.rowsVisibility[indexPath];
+    return block();
+}
+
+- (BOOL)isSectionVisible:(NSInteger)section
+{
+    BOOL(^block)() = self.sectionsVisibility[@(section)];
+    return block();
+}
+
 - (NSIndexPath *)convertRow:(NSIndexPath *)indexPath
 {
     NSInteger section = [self convertSection:indexPath.section];
