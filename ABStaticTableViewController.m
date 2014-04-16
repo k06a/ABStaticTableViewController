@@ -31,13 +31,13 @@
 - (BOOL)isRowVisible:(NSIndexPath *)indexPath
 {
     BOOL(^block)() = self.rowsVisibility[indexPath];
-    return block();
+    return (!block) || block();
 }
 
 - (BOOL)isSectionVisible:(NSInteger)section
 {
     BOOL(^block)() = self.sectionsVisibility[@(section)];
-    return block();
+    return (!block) || block();
 }
 
 - (NSIndexPath *)convertRow:(NSIndexPath *)indexPath
