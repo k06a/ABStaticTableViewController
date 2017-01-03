@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name         = "ABStaticTableViewController"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "Dynamically hide rows and sections in static UITableView inside UITableViewController."
   s.homepage     = "https://github.com/k06a/ABStaticTableViewController"
   s.license      = 'MIT'
   s.author       = { "Anton Bukov" => "k06aaa@gmail.com" }
-  s.source       = { :git => "https://github.com/k06a/ABStaticTableViewController.git", :tag => '1.1.0' }
+  s.source       = { :git => "https://github.com/k06a/ABStaticTableViewController.git", :tag => s.version }
   s.platform     = :ios, '6.0'
   s.source_files = '*.{h,m}'
   s.requires_arc = true
